@@ -27,7 +27,7 @@ function M.get(spec, config, opts)
     ["@lsp.typemod.enumMember.defaultLibrary"] = { link = "@constant.builtin" },
     ["@lsp.typemod.function.defaultLibrary"] = { link = "@function.builtin" },
     ["@lsp.typemod.keyword.async"] = { link = "@keyword.coroutine" },
-    ["@lsp.typemod.macro.defaultLibrary"] = { link = "@function.builtin" },
+    --["@lsp.typemod.macro.defaultLibrary"] = { link = "@function.builtin" },
     ["@lsp.typemod.method.defaultLibrary"] = { link = "@function.builtin" },
     ["@lsp.typemod.operator.injected"] = { link = "@operator" },
     ["@lsp.typemod.string.injected"] = { link = "@string" },

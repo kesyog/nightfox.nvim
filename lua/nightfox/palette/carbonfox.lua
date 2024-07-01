@@ -14,12 +14,12 @@ local palette = {
   black   = Shade.new("#282828", 0.15, -0.15),
   red     = Shade.new("#EE5396", 0.15, -0.15),
   green   = Shade.new("#25be6a", 0.15, -0.15), -- #25be6a or #42BE65
-  yellow  = Shade.new("#08BDBA", 0.15, -0.15),
-  blue    = Shade.new("#78A9FF", 0.15, -0.15),
+  yellow  = Shade.new("#dbc074", 0.15, -0.15),
+  blue    = Shade.new("#79A9FF", 0.15, -0.15),
   magenta = Shade.new("#BE95FF", 0.15, -0.15),
   cyan    = Shade.new("#33B1FF", 0.15, -0.15),
   white   = Shade.new("#dfdfe0", 0.15, -0.15),
-  orange  = Shade.new("#3DDBD9", 0.15, -0.15),
+  orange  = Shade.new("#f4a261", 0.15, -0.15),
   pink    = Shade.new("#FF7EB6", 0.15, -0.15),
 
   comment = bg:blend(fg, 0.4):to_css(),
@@ -66,6 +66,7 @@ local function generate_spec(pal)
     builtin1    = pal.cyan.bright,    -- Builtin type
     builtin2    = pal.orange.bright,  -- Builtin const
     builtin3    = pal.red.bright,     -- Not used
+    builtin4    = pal.blue.dim,       -- Builtin function
     comment     = pal.comment,        -- Comment
     conditional = pal.magenta.bright, -- Conditional and loop
     const       = pal.orange.bright,  -- Constants, imports and booleans
@@ -79,8 +80,8 @@ local function generate_spec(pal)
     preproc     = pal.pink.bright,    -- PreProc
     regex       = pal.yellow.bright,  -- Regex
     statement   = pal.magenta.base,   -- Statements
-    string      = pal.green.base,     -- Strings
-    type        = pal.yellow.base,    -- Types
+    string      = pal.green.dim,     -- Strings
+    type        = pal.red.base,    -- Types
     variable    = pal.white.base,     -- Variables
   }
 

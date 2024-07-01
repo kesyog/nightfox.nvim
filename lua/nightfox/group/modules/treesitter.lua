@@ -48,7 +48,7 @@ function M.get(spec, config, opts)
 
     -- Functions --------------------------------------------------------------
     ["@function"] = { link = "Function" }, -- function definitions
-    ["@function.builtin"] = { fg = syn.builtin0, style = stl.functions }, -- built-in functions
+    ["@function.builtin"] = { fg = syn.builtin4, style = stl.functions }, -- built-in functions
     -- ["@function.call"] = { }, -- function calls
     ["@function.macro"] = { fg = syn.builtin0, style = stl.functions }, -- preprocessor macros
 

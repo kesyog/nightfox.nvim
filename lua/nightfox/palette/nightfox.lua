@@ -60,6 +60,7 @@ local function generate_spec(pal)
     builtin1    = pal.cyan.bright,    -- Builtin type
     builtin2    = pal.orange.bright,  -- Builtin const
     builtin3    = pal.red.bright,     -- Not used
+    builtin4    = pal.blue.dim,       -- Builtin function
     comment     = pal.comment,        -- Comment
     conditional = pal.magenta.bright, -- Conditional and loop
     const       = pal.orange.bright,  -- Constants, imports and booleans
